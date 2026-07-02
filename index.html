@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Otimização de Processos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard de Otimização de Processos</h1>
+        <p>Análise de eficiência operacional e identificação de gargalos em processos empresariais.</p>
+
+        <div class="chart-container">
+            <h2>Duração Média das Tarefas por Processo</h2>
+            <canvas id="chartProcessDuration"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Quantidade de Tarefas por Processo</h2>
+            <canvas id="chartTaskDistribution"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Top 10 Tarefas com Maior Duração Média (Gargalos)</h2>
+            <canvas id="chartBottlenecks"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Duração Média de Tarefas por Recurso</h2>
+            <canvas id="chartResourcePerformance"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
